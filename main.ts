@@ -66,9 +66,22 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("bye:(")
     basic.showString("i wish i wish...")
     basic.showString(":(")
+    basic.showString(":(")
+    basic.showString(":(")
+    music.playMelody("C D C E F G C5 A ", 120)
+    basic.pause(1000)
+    while (true) {
+        music.playMelody("C5 B A G F E D C ", 120)
+        music.playMelody("C D E F G A B C5 ", 120)
+        music.playMelody("C C5 D B E A F G ", 120)
+        music.playTone(247, timer2)
+    }
+    basic.showString("haha!")
 })
 input.onButtonPressed(Button.B, function () {
 	
 })
+let timer2 = 0
 let timer = 0
 timer = 200
+timer2 = 10000
